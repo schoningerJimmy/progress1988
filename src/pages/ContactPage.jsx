@@ -7,28 +7,37 @@ function ContactPage(props) {
     return(
         <Container>
             <Row className="pt-4">
-                <Col xs={12} sm={12} lg={6}>
+                <Col xs={12} sm={12} lg={8}>
                     <Row>
-                            <div className="map-info">
-                                <i className="fa fa-address-card" aria-hidden="true" />Find us at the office
-                                <p>Mochinoki Building 1F,</p>
-                                <p>Higashirinkan, Minami-Ku,</p>
-                                <p>Sagamihara city,</p>
-                                <p>Kanagawa, Japan</p>
-                            </div>
+                        <Col xs={12} lg={5} className="colomn-info">
+                            <i className="fa fa-address-card" aria-hidden="true" />
+                                <span className="contact-title">
+                                    Find us at the office
+                                </span>
+                            <p>Mochinoki Building 1F,</p>
+                            <p>Higashirinkan, Minami-Ku,</p>
+                            <p>Sagamihara city,</p>
+                            <p>Kanagawa, Japan</p>
+                        </Col>
+                        <Col xs={12} lg={7} className="colomn-image">
                             <Image src={frontDoorImage}   className="map-image"/>
+                        </Col>
+                            
                         
                         
                     </Row>
                     <Row className="pt-3">
-                        <div className="phone-info">
-                            <i className="fa fa-phone" aria-hidden="true" />Give us a ring
+                        <Col className="phone-info">
+                            <i className="fa fa-phone" aria-hidden="true" />
+                                <span className="contact-title">
+                                Give us a ring
+                                </span>
                             <p>(+81) 42-747-7118</p>
-                        </div>
+                        </Col>
                         
                     </Row>
                 </Col>
-                <Col xs={12} sm={12} lg={6}>
+                <Col xs={12} sm={12} lg={4}>
                     <Form className="pb-3">
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>

@@ -1,17 +1,11 @@
 
 .image{
-    width: 50%;
-    padding: 10px;
+    width: 100%;
+    padding: 1rem;
+    
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.image:hover {
+    cursor: pointer;  
 }
-@media screen and (max-width: 1000px) {
-    .image {
-        width: 100%;
-    }
-}
+

@@ -1,13 +1,18 @@
-.map-info i, .phone-info i {
+.colomn-info i, .phone-info i {
     font-size:2em;
     padding: 8px;
     color: rgb(154, 188, 84);
 }
 
-.map-info p, .phone-info p {
+.colomn-info p, .phone-info p {
     padding: 8px;
 }
 
+.contact-title {
+    font-size: 1.3rem;
+    color: rgb(154, 188, 84);
+    font-family: 'Dancing Script', cursive;
+}
 .map-image{
     width: 100%;
 }
@@ -15,12 +20,4 @@
 .colorButton {
     background-color: rgb(154, 188, 84) !important;
     border-color: rgb(154, 188, 84) !important;
-}
-
-@media screen and (max-width: 1000px) {
-    .map-info, .phone-info, .map-image {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-
 }
